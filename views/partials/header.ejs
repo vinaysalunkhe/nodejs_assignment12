@@ -1,0 +1,18 @@
+<header
+    style="display: flex; align-items: center; justify-content: space-between; background-color: #0c0303; color: #fff; padding: 10px;">
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/index">Todo</a></li>
+        </ul>
+    </nav>
+    <div style="display: flex; align-items: center;">
+        <span>Welcome <span id="welcomeUsername">
+                <%= email.substring(0,email.indexOf('@')) %>
+            </span></span>
+        <a href="/logout"><button id="logoutButton"
+                style="margin-left: 10px; background-color: #890606; color: #fff; border: none; border-radius: 5px; padding: 5px 10px; cursor: pointer;">Logout</button></a>
+    </div>
+</header>

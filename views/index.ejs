@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav li {
+            margin-right: 20px;
+        }
+
+        header nav li:last-child {
+            margin-right: 0;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .left-pane {
+            flex: 1;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .right-pane {
+            flex: 2;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .task-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .task-list-item {
+            cursor: pointer;
+            padding: 8px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .task-list-item:hover {
+            background-color: #f9f9f9;
+        }
+
+        .list-group-item {
+            display: flex;
+            padding: 3px;
+            justify-content: space-between;
+        }
+
+        #taskDescription {
+            border: none;
+            background-color: rgb(239, 252, 252);
+            height: 100px;
+            width: 300px;
+            font-size: large;
+        }
+
+        #createTask {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+        <div class="container">
+            <div class="left-pane">
+                <h2>Task List</h2>
+                <ul class="task-list" id="taskList">
+                </ul>
+            </div>
+            <form action="/writeTask" method="POST" enctype="multipart/form-data">
+                <div class="right-pane">
+                    <input id="taskDescription" name="taskDescription" rows="4" placeholder="I need to ...." required />
+                    <input type="file" id="pic" name="pic" rows="4" required />
+                    <button type="submit" id="createTask">Create Task</button>
+                </div>
+            </form>
+        </div>
+        <script src="/script.js">
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<% if(data) { %>
+    <div style="display:flex;justify-content:center">
+        <table style="border:1px solid black;">
+            <tr>
+                <th>Name</th>
+                <th>age</th>
+                <th>number</th>
+            </tr>
+            <% data.forEach(function(data) { %>
+                <tr>
+                    <td>
+                        <%= data.name %>
+                    </td>
+                    <td>
+                        <%= data.age %>
+                    </td>
+                    <td>
+                        <%= data.number %>
+                    </td>
+                </tr>
+                <% }); %>
+        </table>
+    </div>
+    <% } %>

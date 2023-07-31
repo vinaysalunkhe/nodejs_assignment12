@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Task Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav li {
+            margin-right: 20px;
+        }
+
+        header nav li:last-child {
+            margin-right: 0;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background-color: #f0f0f0;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+
+        <div class="container">
+            <div class="hero">
+                <h1>About Task Management System</h1>
+                <p>The Task Management System is a simple yet powerful tool for organizing and managing your tasks. It
+                    allows you to create, update, and delete tasks with ease. Whether you are an individual looking to
+                    stay
+                    organized or a team collaborating on projects, our system can help streamline your workflow.</p>
+                <p>Key features of our Task Management System include:</p>
+                <ul>
+                    <li>Creating tasks with descriptions and due dates.</li>
+                    <li>Updating task status and details.</li>
+                    <li>Assigning tasks to team members.</li>
+                    <li>Tracking task progress and completion.</li>
+                    <li>Managing task priorities and categories.</li>
+                </ul>
+                <p>Thank you for choosing our Task Management System for your task management needs!</p>
+            </div>
+        </div>
+        <%- include('partials/data') %>
+            <script src="/script.js">
+            </script>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Task Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav li {
+            margin-right: 20px;
+        }
+
+        header nav li:last-child {
+            margin-right: 0;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background-color: #f0f0f0;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+
+        <div class="container">
+            <div class="hero">
+                <h1>Contact Us</h1>
+                <p>If you have any questions, feedback, or inquiries related to our Task Management System, please don't
+                    hesitate to get in touch with us.</p>
+                <p>You can reach us via the following methods:</p>
+                <ul>
+                    <li>Email: vinaysalunkhe1006@gmail.com</li>
+                    <li>Phone: +1 (123) 456-7890</li>
+                    <li>Address: 123 Main Street, shirpur City, India</li>
+                </ul>
+                <p>We are available during regular business hours and will do our best to respond to your message
+                    promptly.
+                </p>
+                <p>Thank you for your interest in our Task Management System!</p>
+            </div>
+        </div>
+        <%- include('partials/data') %>
+            <script src="/script.js">
+            </script>
+</body>
+
+</html>
